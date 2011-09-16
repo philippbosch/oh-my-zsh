@@ -14,6 +14,6 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY=")%{$fg[blue]%} %{$fg_bold[yellow]%}✗%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=")%{$fg[blue]%}"
 
-RPROMPT='%{$fg_bold[black]%}`uptime | sed "s/.*: //"` — %*%{$reset_color%}'
+RPROMPT='%{$fg_bold[black]%}`uptime | sed "s/.*: //"` - %*%{$reset_color%}'
 
 LSCOLORS=ExFxCxDxBxbxbxbxbxbxbx
