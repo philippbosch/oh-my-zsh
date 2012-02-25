@@ -2,7 +2,8 @@
 function virtualenv_name {
     if [[ -n "$VIRTUAL_ENV" ]]
     then
-        echo " `basename $VIRTUAL_ENV`"
+        PROJECT_ROOT=`echo $VIRTUAL_ENV | sed -e "s/\\/venv//g"`
+        echo " `basename $PROJECT_ROOT`"
     fi
 }
 
