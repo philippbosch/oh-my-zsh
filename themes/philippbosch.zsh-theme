@@ -8,12 +8,12 @@ function virtualenv_name {
 }
 
 
-PROMPT='%{$fg_bold[black]%}%n@%m:%{$fg_bold[red]%}${PWD/#$HOME/~}%{$fg[green]%}$(virtualenv_name) %{$reset_color%}%{$fg[blue]%}$(git_prompt_info)%{$fg_bold[white]%} %# %{$reset_color%}'
+PROMPT='%{$fg_bold[black]%}%n@%m:%{$fg_bold[red]%}${PWD/#$HOME/~}%{$fg[blue]%}$(virtualenv_name) %{$reset_color%}%{$fg[green]%}$(git_prompt_info)%{$fg_bold[white]%} %# %{$reset_color%}'
 
-ZSH_THEME_GIT_PROMPT_PREFIX="±%b%{$fg_bold[blue]%}("
+ZSH_THEME_GIT_PROMPT_PREFIX="±%b%{$fg_bold[green]%}("
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_DIRTY=")%{$fg[blue]%} %{$fg_bold[yellow]%}✗%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_CLEAN=")%{$fg[blue]%}"
+ZSH_THEME_GIT_PROMPT_DIRTY=")%{$fg[green]%} %{$fg_bold[yellow]%}✗%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_CLEAN=")%{$fg[green]%}"
 
 RPROMPT='%{$fg_bold[black]%}`uptime | sed "s/.*: //"` - %*%{$reset_color%}'
 
